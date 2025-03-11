@@ -41,6 +41,7 @@ export default function Products() {
 
   return (
     <section className="bg-[#e6e0d2]">
+      <h2 className="text-2xl font-bold text-center py-4">Book Collection</h2>
       <div className="">
         {books.map((book) => (
           <figure key={book.id}>
@@ -52,8 +53,10 @@ export default function Products() {
               />
             )}
             <figcaption>
-              <strong className="text-xl font-mono">{book.volumeInfo.title}</strong>
-              <p className=" font-mono">
+              <strong className="text-xl font-mono">
+                {book.volumeInfo.title}
+              </strong>
+              <p className=" font-mono ">
                 {book.volumeInfo.description || "No description available"}
               </p>
             </figcaption>

@@ -4,6 +4,8 @@ import Image from "./Image";
 import Button from "./Button";
 import Counter from "./Counter";
 import Api from "./Api";
+import ControlledForm from "./ControlledForm";
+import UncontrolledForm from "./UncontrolledForm";
 
 function App() {
   const [num, setNum] = useState(1);
@@ -53,6 +55,8 @@ function App() {
         <div className="">
           <Api />
         </div>
+        <ControlledForm />
+        <UncontrolledForm />
       </main>
     </>
   );
